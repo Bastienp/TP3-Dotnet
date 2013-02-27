@@ -1,0 +1,7 @@
+D:\Dev\Dotnet\TP3 Dotnet\TP3 Dotnet\TP3 Dotnet\bin\Debug\TP3 Dotnet.exe
+D:\Dev\Dotnet\TP3 Dotnet\TP3 Dotnet\TP3 Dotnet\bin\Debug\TP3 Dotnet.pdb
+D:\Dev\Dotnet\TP3 Dotnet\TP3 Dotnet\TP3 Dotnet\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dev\Dotnet\TP3 Dotnet\TP3 Dotnet\TP3 Dotnet\obj\x86\Debug\TP3 Dotnet.exe
+D:\Dev\Dotnet\TP3 Dotnet\TP3 Dotnet\TP3 Dotnet\obj\x86\Debug\TP3 Dotnet.pdb
+D:\Dev\Dotnet\TP3 Foot Dotnet\TP3 Dotnet\obj\x86\Debug\TP3 Dotnet.exe
+D:\Dev\Dotnet\TP3 Foot Dotnet\TP3 Dotnet\obj\x86\Debug\TP3 Dotnet.pdb
