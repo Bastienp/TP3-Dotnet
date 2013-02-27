@@ -1,4 +1,4 @@
-﻿using ClassLib; //test commit
+﻿using ClassLib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 

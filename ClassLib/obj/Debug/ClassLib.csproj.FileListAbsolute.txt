@@ -3,3 +3,8 @@ D:\Dev\Dotnet\TP3 Dotnet\TP3 Dotnet\ClassLib\bin\Debug\ClassLib.dll
 D:\Dev\Dotnet\TP3 Dotnet\TP3 Dotnet\ClassLib\bin\Debug\ClassLib.pdb
 D:\Dev\Dotnet\TP3 Dotnet\TP3 Dotnet\ClassLib\obj\Debug\ClassLib.dll
 D:\Dev\Dotnet\TP3 Dotnet\TP3 Dotnet\ClassLib\obj\Debug\ClassLib.pdb
+D:\Dev\Dotnet\TP3 Foot Dotnet\ClassLib\bin\Debug\ClassLib.dll
+D:\Dev\Dotnet\TP3 Foot Dotnet\ClassLib\bin\Debug\ClassLib.pdb
+D:\Dev\Dotnet\TP3 Foot Dotnet\ClassLib\obj\Debug\ResolveAssemblyReference.cache
+D:\Dev\Dotnet\TP3 Foot Dotnet\ClassLib\obj\Debug\ClassLib.dll
+D:\Dev\Dotnet\TP3 Foot Dotnet\ClassLib\obj\Debug\ClassLib.pdb
