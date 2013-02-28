@@ -73,7 +73,7 @@ namespace TP3classTest
         public void ToStringTest() // Attention ce test ne test pas ToString mais le constructeur, il faut voir avec le prof comment utiliser ToString
         {
             Club target = new Club("Bordeaux"); 
-            Assert.AreEqual("Bordeaux", target.Name);
+            Assert.AreEqual("Bordeaux", target.ToString());
            
         }
     }

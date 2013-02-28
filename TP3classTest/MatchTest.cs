@@ -73,7 +73,7 @@ namespace TP3classTest
         public void AwayTest()
         {
             Match target = new Match(new Club ("Bordeaux"), new Club ("Marseille")); // TODO: initialisez à une valeur appropriée
-            Assert.AreEqual("Marseille", target.Away.Name);
+            Assert.AreEqual("Marseille", target.Away.ToString());
         }
 
         /// <summary>
@@ -94,7 +94,7 @@ namespace TP3classTest
         public void HomeTest()
         {
             Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
-            Assert.AreEqual("Bordeaux", target.Home.Name);
+            Assert.AreEqual("Bordeaux", target.Home.ToString());
         }
 
         /// <summary>

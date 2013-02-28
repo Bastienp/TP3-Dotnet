@@ -14,7 +14,7 @@ namespace ClassLib
         private int homeGoals;
         private bool isAwayForfeit;
         private bool isHomeForfeit;
-        private bool isDraw;
+
 
 
         public Match(Club homeName, Club awayName)

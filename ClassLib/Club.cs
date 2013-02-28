@@ -16,22 +16,13 @@ namespace ClassLib
       
         }
 
-        public string Name
-        {
-            get
-            {
-                return this.name;
-                
-            }
-      
-
-
-        }
+       
 
 
         public override string ToString() // il faut faire override
         {
-            return "lol";
+            return this.name;
+
         }
             
 
