@@ -52,6 +52,8 @@
   <ItemGroup>
     <Compile Include="BasicPointSystemMock.cs" />
     <Compile Include="ClubTest.cs" />
+    <Compile Include="FrenchLeague1PointSystemTest.cs" />
+    <Compile Include="FrenchLeague1PointSystem_PointTotalTest.cs" />
     <Compile Include="MatchTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,6 +62,9 @@
       <Project>{344A66B9-921B-4939-A250-7E0CC3F349F9}</Project>
       <Name>ClassLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Shadow Include="Références de test\ClassLib.accessor" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
