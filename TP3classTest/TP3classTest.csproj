@@ -50,6 +50,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicPointSystemMock.cs" />
     <Compile Include="ClubTest.cs" />
     <Compile Include="MatchTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
