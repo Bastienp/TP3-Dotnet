@@ -79,24 +79,22 @@ namespace TP3classTest
         ///Test pour GetPointsFromMatch
         ///</summary>
         [TestMethod()]
-        [DeploymentItem("ClassLib.dll")]
         public void GetPointsFromMatchTest()
         {
-            FrenchLeague1PointSystem_Accessor target = new FrenchLeague1PointSystem_Accessor(); // TODO: initialisez à une valeur appropriée
-            Match m = null; // TODO: initialisez à une valeur appropriée
-            bool IsHome = false; // TODO: initialisez à une valeur appropriée
-            PointSystem.ITotal expected = null; // TODO: initialisez à une valeur appropriée
-            PointSystem.ITotal actual;
-            actual = target.GetPointsFromMatch(m, IsHome);
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
+            target.AwayGoals = 2;
+            target.HomeGoals = 1;
+            FrenchLeague1PointSystem frenchRules = FrenchLeague1PointSystem.Instance;
+            //targetResult = frenchRules.GetPointsFromMatch(target, true);
+            
+            Assert.AreEqual(-1, frenchRules.GetPointsFromMatch(target, true));
+
         }
 
         /// <summary>
         ///Test pour InitialPoints
         ///</summary>
         [TestMethod()]
-        [DeploymentItem("ClassLib.dll")]
         public void InitialPointsTest()
         {
             FrenchLeague1PointSystem_Accessor target = new FrenchLeague1PointSystem_Accessor(); // TODO: initialisez à une valeur appropriée
@@ -109,11 +107,10 @@ namespace TP3classTest
         ///Test pour Instance
         ///</summary>
         [TestMethod()]
-        [DeploymentItem("ClassLib.dll")]
         public void InstanceTest()
         {
-            FrenchLeague1PointSystem_Accessor actual;
-            actual = FrenchLeague1PointSystem_Accessor.Instance;
+            FrenchLeague1PointSystem actual;
+            actual = FrenchLeague1PointSystem.Instance;
             Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
     }

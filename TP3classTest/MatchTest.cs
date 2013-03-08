@@ -64,7 +64,41 @@ namespace TP3classTest
         #endregion
 
 
-    
+        /// <summary>
+        ///Test pour GetGoals Home
+        ///</summary>
+        [TestMethod()]
+        public void GetGoalsTestHome()
+        {
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            target.HomeGoals = 1;
+            Assert.AreEqual(1, target.GetGoals(true));
+        }
+
+        /// <summary>
+        ///Test pour GetGoals Away
+        ///</summary>
+        [TestMethod()]
+        public void GetGoalsTestAway()
+        {
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            target.AwayGoals = 2;
+            Assert.AreEqual(2, target.GetGoals(false));
+        }
+        /// <summary>
+        ///Test pour GetGoals Away and home
+        ///</summary>
+        [TestMethod()]
+        public void GetGoalsTestAwayAndHome()
+        {
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            target.AwayGoals = 2;
+            target.HomeGoals = 1;
+            Assert.AreEqual(2, target.GetGoals(false));
+            Assert.AreEqual(1, target.GetGoals(true));
+
+        }
+
 
         /// <summary>
         ///Test pour Away

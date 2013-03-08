@@ -8,6 +8,12 @@ namespace ClassLib
     public abstract class PointSystem
     {
 
+            public interface ITotal : IComparable
+            {
+                void Increment(ITotal with);
+                string ToString();
+            }
+
 
         abstract public ITotal InitialPoints
         {
@@ -15,13 +21,6 @@ namespace ClassLib
         }
       
         abstract public ITotal GetPointsFromMatch(Match m, bool IsHome);
-      
-
-            public interface ITotal : IComparable
-            {
-                void Increment(ITotal with);
-                string ToString();
-            }
 
     }
 }

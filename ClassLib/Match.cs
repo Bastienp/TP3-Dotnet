@@ -25,8 +25,16 @@ namespace ClassLib
         }
         public int GetGoals(bool club)
         {
-            return 0;
-            //TODO Il faut comprendre le fonctionnement de getgoals, la méthode est utiliséde dans le constructeur de point system
+
+            if (club == true)
+            {
+                return this.homeGoals;
+            }
+            else
+            {
+                return this.awayGoals;
+            }
+         
         }
 
 

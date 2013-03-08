@@ -12,3 +12,5 @@ D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\bin\Debug\ClassLib.pdb
 D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\obj\Debug\ResolveAssemblyReference.cache
 D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\obj\Debug\TP3classTest.dll
 D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\obj\Debug\TP3classTest.pdb
+D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\bin\Debug\ClassLib_Accessor.dll
+D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\bin\Debug\ClassLib_Accessor.pdb

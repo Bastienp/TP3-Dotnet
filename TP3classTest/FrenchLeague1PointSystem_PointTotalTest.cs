@@ -71,9 +71,7 @@ namespace TP3classTest
         [DeploymentItem("ClassLib.dll")]
         public void FrenchLeague1PointSystem_PointTotalConstructorTest()
         {
-            Match m = null; // TODO: initialisez à une valeur appropriée
-            bool home = false; // TODO: initialisez à une valeur appropriée
-            FrenchLeague1PointSystem_Accessor.PointTotal target = new FrenchLeague1PointSystem_Accessor.PointTotal(m, home);
+            FrenchLeague1PointSystem_Accessor.PointTotal target = new FrenchLeague1PointSystem_Accessor.PointTotal();
             Assert.Inconclusive("TODO: implémentez le code pour vérifier la cible");
         }
 
@@ -84,7 +82,9 @@ namespace TP3classTest
         [DeploymentItem("ClassLib.dll")]
         public void FrenchLeague1PointSystem_PointTotalConstructorTest1()
         {
-            FrenchLeague1PointSystem_Accessor.PointTotal target = new FrenchLeague1PointSystem_Accessor.PointTotal();
+            Match m = null; // TODO: initialisez à une valeur appropriée
+            bool home = false; // TODO: initialisez à une valeur appropriée
+            FrenchLeague1PointSystem_Accessor.PointTotal target = new FrenchLeague1PointSystem_Accessor.PointTotal(m, home);
             Assert.Inconclusive("TODO: implémentez le code pour vérifier la cible");
         }
 
@@ -95,13 +95,18 @@ namespace TP3classTest
         [DeploymentItem("ClassLib.dll")]
         public void CompareToTest()
         {
-            FrenchLeague1PointSystem_Accessor.PointTotal target = new FrenchLeague1PointSystem_Accessor.PointTotal(); // TODO: initialisez à une valeur appropriée
-            object obj = null; // TODO: initialisez à une valeur appropriée
-            int expected = 0; // TODO: initialisez à une valeur appropriée
-            int actual;
-            actual = target.CompareTo(obj);
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+            Match m1 = new Match(new Club("Bordeaux"), new Club("Marseille"));
+            m1.AwayGoals = 1;
+            m1.HomeGoals = 3;
+            FrenchLeague1PointSystem frenchRules = FrenchLeague1PointSystem.Instance;
+            PointSystem.ITotal pointTotal1 = frenchRules.GetPointsFromMatch(m1, true);
+
+            Match m2 = new Match(new Club("Paris"), new Club("Lens"));
+            m2.AwayGoals = 3;
+            m2.HomeGoals = 2;
+            PointSystem.ITotal pointTotal2 = frenchRules.GetPointsFromMatch(m2, false);
+
+            Assert.AreEqual(1, pointTotal1.CompareTo(pointTotal2));
         }
 
         /// <summary>
@@ -111,10 +116,25 @@ namespace TP3classTest
         [DeploymentItem("ClassLib.dll")]
         public void IncrementTest()
         {
-            FrenchLeague1PointSystem_Accessor.PointTotal target = new FrenchLeague1PointSystem_Accessor.PointTotal(); // TODO: initialisez à une valeur appropriée
-            PointSystem.ITotal with = null; // TODO: initialisez à une valeur appropriée
-            target.Increment(with);
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
+            Match m1 = new Match(new Club("Bordeaux"), new Club("Marseille"));
+            m1.AwayGoals = 1;
+            m1.HomeGoals = 3;
+            FrenchLeague1PointSystem frenchRules = FrenchLeague1PointSystem.Instance;
+            PointSystem.ITotal pointTotal1 = frenchRules.GetPointsFromMatch(m1, true); //2
+
+            Match m2 = new Match(new Club("Lens"), new Club("Bordeaux"));
+            m2.AwayGoals = 3;
+            m2.HomeGoals = 2;
+            PointSystem.ITotal pointTotal2 = frenchRules.GetPointsFromMatch(m2, false); //1
+
+            pointTotal1.Increment(pointTotal2); //3
+
+            Assert.AreEqual(2, pointTotal1.CompareTo(pointTotal2));
+
+
+
+
+            
         }
 
         /// <summary>

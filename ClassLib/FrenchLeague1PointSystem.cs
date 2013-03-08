@@ -5,31 +5,38 @@ using System.Text;
 
 namespace ClassLib
 {
-    class FrenchLeague1PointSystem : PointSystem
+    public class FrenchLeague1PointSystem : PointSystem
     {
         private class PointTotal : ITotal
         {
-            private int goalaverage;
+            //private int goalaverage;
             private int points;
 
-            public int CompareTo(Object obj)
-            {
-                throw new NotImplementedException();
-            }
-
-            public void Increment(ITotal with)
-            {
-                throw new NotImplementedException();
-            }
 
             public PointTotal()
             {
+                this.points = 0;
             }
 
             public PointTotal(Match m, bool home)
             {
-                throw new NotImplementedException();
+                this.points = m.GetGoals(home) - m.GetGoals(!home);
+                //this.goalaverage = m.GetGoals(home) / m.GetGoals(!home);
             }
+
+
+            public int CompareTo(object obj)
+            {
+                return this.points - ((PointTotal)obj).points;
+    
+            }
+
+            public void Increment(PointSystem.ITotal with)
+            {
+                this.points += ((PointTotal)with).points;
+            }
+
+
 
 
             public override string ToString()
@@ -46,33 +53,35 @@ namespace ClassLib
 
         private FrenchLeague1PointSystem()
         {
+
         }
 
-
-        public override ITotal InitialPoints
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
 
         public static FrenchLeague1PointSystem Instance // A modifier, ne permet pas d'éviter une double instanciation dans un contexte multithread
         {
             get
             {
-                throw new NotImplementedException();
-                /*if (theInstance == null)
+                //throw new NotImplementedException();
+                if (theInstance == null)
                 {
                     theInstance = new FrenchLeague1PointSystem();
                 }
-                return theInstance;*/
+                return theInstance;
+            }
+        }
+
+
+        public override PointSystem.ITotal InitialPoints
+        {
+            get
+            {
+                return new PointTotal();
             }
         }
 
         public override ITotal GetPointsFromMatch(Match m, bool IsHome)
         {
-            throw new NotImplementedException();
+            return new PointTotal(m, IsHome);
         }
 
 
