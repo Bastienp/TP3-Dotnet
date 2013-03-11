@@ -52,7 +52,6 @@
   <ItemGroup>
     <Compile Include="BasicPointSystemMock.cs" />
     <Compile Include="ClubTest.cs" />
-    <Compile Include="FrenchLeague1PointSystemTest.cs" />
     <Compile Include="FrenchLeague1PointSystem_PointTotalTest.cs" />
     <Compile Include="MatchTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

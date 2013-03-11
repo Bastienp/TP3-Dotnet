@@ -70,7 +70,7 @@ namespace TP3classTest
         [TestMethod()]
         public void GetGoalsTestHome()
         {
-            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
             target.HomeGoals = 1;
             Assert.AreEqual(1, target.GetGoals(true));
         }
@@ -81,7 +81,7 @@ namespace TP3classTest
         [TestMethod()]
         public void GetGoalsTestAway()
         {
-            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
             target.AwayGoals = 2;
             Assert.AreEqual(2, target.GetGoals(false));
         }
@@ -91,7 +91,7 @@ namespace TP3classTest
         [TestMethod()]
         public void GetGoalsTestAwayAndHome()
         {
-            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
             target.AwayGoals = 2;
             target.HomeGoals = 1;
             Assert.AreEqual(2, target.GetGoals(false));
@@ -106,7 +106,7 @@ namespace TP3classTest
         [TestMethod()]
         public void AwayTest()
         {
-            Match target = new Match(new Club ("Bordeaux"), new Club ("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club ("Bordeaux"), new Club ("Marseille"));
             Assert.AreEqual("Marseille", target.Away.ToString());
         }
 
@@ -116,7 +116,7 @@ namespace TP3classTest
         [TestMethod()]
         public void AwayGoalsTest()
         {
-            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
             target.AwayGoals = 3;
             Assert.AreEqual(3, target.AwayGoals);
         }
@@ -127,7 +127,7 @@ namespace TP3classTest
         [TestMethod()]
         public void HomeTest()
         {
-            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
             Assert.AreEqual("Bordeaux", target.Home.ToString());
         }
 
@@ -137,7 +137,7 @@ namespace TP3classTest
         [TestMethod()]
         public void HomeGoalsTest()
         {
-            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
             target.HomeGoals = 3;
             Assert.AreEqual(3, target.HomeGoals);
         }
@@ -148,7 +148,7 @@ namespace TP3classTest
         [TestMethod()]
         public void IsAwayForfeitTest()
         {
-            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
             target.IsAwayForfeit = true;
             Assert.IsTrue(target.IsAwayForfeit);
            
@@ -160,7 +160,7 @@ namespace TP3classTest
         [TestMethod()]
         public void IsDrawTest()
         {
-            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
             target.HomeGoals = 2;
             target.AwayGoals = 2;
             Assert.IsTrue(target.IsDraw);
@@ -173,7 +173,7 @@ namespace TP3classTest
         [TestMethod()]
         public void IsHomeForfeitTest()
         {
-            Match target = new Match(new Club("Bordeaux"), new Club("Marseille")); // TODO: initialisez à une valeur appropriée
+            Match target = new Match(new Club("Bordeaux"), new Club("Marseille"));
             target.IsHomeForfeit = true;
             Assert.IsTrue(target.IsHomeForfeit);
         }

@@ -9,7 +9,7 @@ namespace ClassLib
     {
         private class PointTotal : ITotal
         {
-            //private int goalaverage;
+            private int goalaverage;
             private int points;
             
 
@@ -21,7 +21,7 @@ namespace ClassLib
             public PointTotal(Match m, bool home)
             {
 
-                //this.goalaverage = m.GetGoals(home) - m.GetGoals(!home);
+                this.goalaverage = m.GetGoals(home) - m.GetGoals(!home);
 
                 int result = m.GetGoals(home) - m.GetGoals(!home);
                 if (result > 0)
@@ -39,31 +39,30 @@ namespace ClassLib
 
             public int CompareTo(object obj)
             {
-                return this.points - ((PointTotal)obj).points;
-                /*if(this.points != ((PointTotal)obj).points)
+                if(this.points != ((PointTotal)obj).points)
                 {
                     return this.points - ((PointTotal)obj).points;
                 }
                 else
                 {
                     return this.goalaverage - ((PointTotal)obj).goalaverage;
-                }*/
+                }
     
             }
 
             public void Increment(PointSystem.ITotal with)
             {
                 this.points += ((PointTotal)with).points;
-                //this.goalaverage += ((PointTotal)with).goalaverage;
+                this.goalaverage += ((PointTotal)with).goalaverage;
             }
 
 
 
 
-            public override string ToString()
+            /*public override string ToString()
             {
                 return base.ToString();
-            }
+            }*/
 
             
 
@@ -78,11 +77,11 @@ namespace ClassLib
         }
 
 
-        public static FrenchLeague1PointSystem Instance // A modifier, ne permet pas d'éviter une double instanciation dans un contexte multithread
+        public static FrenchLeague1PointSystem Instance //// Permet de ne pas instancier deux fois FrenchLeague1PointSystem. On pourrait améliorer le Singleton car il ne permet pas d'éviter une double instanciation dans un contexte multithread
         {
             get
             {
-                //throw new NotImplementedException();
+
                 if (theInstance == null)
                 {
                     theInstance = new FrenchLeague1PointSystem();
