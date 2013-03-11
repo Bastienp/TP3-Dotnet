@@ -89,11 +89,11 @@ namespace TP3classTest
         }
 
         /// <summary>
-        ///Test pour CompareTo
+        ///Test1 pour CompareTo
         ///</summary>
         [TestMethod()]
         [DeploymentItem("ClassLib.dll")]
-        public void CompareToTest()
+        public void CompareToTest1()
         {
             Match m1 = new Match(new Club("Bordeaux"), new Club("Marseille"));
             m1.AwayGoals = 1;
@@ -102,12 +102,38 @@ namespace TP3classTest
             PointSystem.ITotal pointTotal1 = frenchRules.GetPointsFromMatch(m1, true);
 
             Match m2 = new Match(new Club("Paris"), new Club("Lens"));
-            m2.AwayGoals = 3;
-            m2.HomeGoals = 2;
-            PointSystem.ITotal pointTotal2 = frenchRules.GetPointsFromMatch(m2, false);
+            m2.AwayGoals = 2;
+            m2.HomeGoals = 1;
+            PointSystem.ITotal pointTotal2 = frenchRules.GetPointsFromMatch(m2, true); 
 
-            Assert.AreEqual(1, pointTotal1.CompareTo(pointTotal2));
+            Assert.AreEqual(1, pointTotal1.CompareTo(pointTotal2)); //Home de M1 gagne (+1 points) Home de M2 perd (+0 points), donc la différence est égale ) 1.
         }
+
+
+        /// <summary>
+        ///Test2 pour CompareTo
+        ///</summary>
+        [TestMethod()]
+        [DeploymentItem("ClassLib.dll")]
+        public void CompareToTest2()
+        {
+            Match m1 = new Match(new Club("Bordeaux"), new Club("Marseille"));
+            m1.AwayGoals = 1;
+            m1.HomeGoals = 3;
+            FrenchLeague1PointSystem frenchRules = FrenchLeague1PointSystem.Instance;
+            PointSystem.ITotal pointTotal1 = frenchRules.GetPointsFromMatch(m1, true);
+
+            Match m2 = new Match(new Club("Paris"), new Club("Lens"));
+            m2.AwayGoals = 2;
+            m2.HomeGoals = 4;
+            PointSystem.ITotal pointTotal2 = frenchRules.GetPointsFromMatch(m2, true);
+
+            Assert.AreEqual(0, pointTotal1.CompareTo(pointTotal2)); //Egalité de points et égalité de goalaverage, la différence est donc de 0.
+        }
+
+
+
+     
 
         /// <summary>
         ///Test pour Increment
@@ -116,20 +142,33 @@ namespace TP3classTest
         [DeploymentItem("ClassLib.dll")]
         public void IncrementTest()
         {
+            FrenchLeague1PointSystem frenchRules = FrenchLeague1PointSystem.Instance;
+
+
+            
             Match m1 = new Match(new Club("Bordeaux"), new Club("Marseille"));
             m1.AwayGoals = 1;
             m1.HomeGoals = 3;
-            FrenchLeague1PointSystem frenchRules = FrenchLeague1PointSystem.Instance;
-            PointSystem.ITotal pointTotal1 = frenchRules.GetPointsFromMatch(m1, true); //2
+            PointSystem.ITotal pointTotal1 = frenchRules.GetPointsFromMatch(m1, true); //1
 
-            Match m2 = new Match(new Club("Lens"), new Club("Bordeaux"));
-            m2.AwayGoals = 3;
+            Match m2 = new Match(new Club("Paris"), new Club("Lens"));
+            m2.AwayGoals = 2;
+            m2.HomeGoals = 3;
+            PointSystem.ITotal pointTotal2 = frenchRules.GetPointsFromMatch(m2, true); //1
+
+
+            pointTotal1.Increment(pointTotal2); //2
+
+
+
+            Match m3 = new Match(new Club("test"), new Club("test1"));
+            m2.AwayGoals = 2;
             m2.HomeGoals = 2;
-            PointSystem.ITotal pointTotal2 = frenchRules.GetPointsFromMatch(m2, false); //1
+            PointSystem.ITotal pointTotal3 = frenchRules.GetPointsFromMatch(m3, true); //0 ==> Crée pour comparer avec 0.*/
 
-            pointTotal1.Increment(pointTotal2); //3
+           
 
-            Assert.AreEqual(2, pointTotal1.CompareTo(pointTotal2));
+            Assert.AreEqual(2, pointTotal1.CompareTo(pointTotal3)); //CompareTo = pointTotal1 - pointTotal2 = 2 - 0 = 2
 
 
 

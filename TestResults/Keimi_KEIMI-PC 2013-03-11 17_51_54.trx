@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="84d8277d-24df-46c6-b026-a4641a8765eb" name="Keimi@KEIMI-PC 2013-03-11 17:51:54" runUser="Keimi-PC\Keimi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8cdc5f29-431d-4b7e-bb6b-06a80901297c">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Keimi_KEIMI-PC 2013-03-11 17_51_54">
+      <DeploymentItem filename="D:\Dev\Dotnet\TP3 Foot Dotnet\ClassLib\bin\Debug\ClassLib.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-03-11T17:51:54.0446188+01:00" queuing="2013-03-11T17:51:55.4226976+01:00" start="2013-03-11T17:51:55.4316981+01:00" finish="2013-03-11T17:51:56.2217433+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="22" executed="22" passed="14" error="0" failed="4" timeout="0" aborted="0" inconclusive="4" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetGoalsTestHome" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="66449b77-e210-300e-ad2f-5d7338ae3674">
+      <Execution id="ba15ab15-d104-4c99-b654-13421298393e" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetGoalsTestHome" />
+    </UnitTest>
+    <UnitTest name="AwayTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="4ac3140e-fbe5-6a30-6ad9-539372fc1464">
+      <Execution id="074b606f-d638-48da-95b0-615c2013b3a7" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AwayTest" />
+    </UnitTest>
+    <UnitTest name="GetPointsFromMatchTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="156fb3d3-45e2-ca32-b814-97757bca0ecc">
+      <Execution id="bde66e55-f7ad-4285-8a81-24dbe6913391" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystemTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetPointsFromMatchTest" />
+    </UnitTest>
+    <UnitTest name="HomeGoalsTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="4cc693e8-c589-b96f-8314-aafe93bbf0db">
+      <Execution id="e503cdd9-588e-4126-8172-f70d8e26a3f8" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HomeGoalsTest" />
+    </UnitTest>
+    <UnitTest name="AwayGoalsTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="d107c4bc-5dcb-a405-d6ca-bf8831813094">
+      <Execution id="782f4628-d6af-4027-976f-f1bd4ada68d3" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AwayGoalsTest" />
+    </UnitTest>
+    <UnitTest name="CompareToTest3" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="f4e2bdc2-7ad5-a7fd-d80f-fa54d2eec1b9">
+      <DeploymentItems>
+        <DeploymentItem filename="ClassLib.dll" />
+      </DeploymentItems>
+      <Execution id="63fb6dab-8d18-4645-8274-25d71bf79ded" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystem_PointTotalTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToTest3" />
+    </UnitTest>
+    <UnitTest name="GetGoalsTestAwayAndHome" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="49c41386-d9a6-f19d-c9bf-8a218deef5fd">
+      <Execution id="d1d63221-a54e-429b-a292-77f86e9dd82e" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetGoalsTestAwayAndHome" />
+    </UnitTest>
+    <UnitTest name="FrenchLeague1PointSystem_PointTotalConstructorTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="bc89cd7f-fd1b-bd4b-01f1-030e0a0e8d90">
+      <DeploymentItems>
+        <DeploymentItem filename="ClassLib.dll" />
+      </DeploymentItems>
+      <Execution id="873801de-216a-4198-b31e-99afa2a870d1" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystem_PointTotalTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FrenchLeague1PointSystem_PointTotalConstructorTest" />
+    </UnitTest>
+    <UnitTest name="InitialPointsTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="92818927-5a18-af3f-f6ee-f687d6ea2905">
+      <Execution id="6b7d23a8-d3ef-4242-8730-3e84291c2d78" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystemTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitialPointsTest" />
+    </UnitTest>
+    <UnitTest name="FrenchLeague1PointSystemConstructorTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="981f8f49-acaa-83c5-d280-7d86853fde62">
+      <DeploymentItems>
+        <DeploymentItem filename="ClassLib.dll" />
+      </DeploymentItems>
+      <Execution id="3fbb7c1a-3953-438f-bda6-9ac99873d560" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystemTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FrenchLeague1PointSystemConstructorTest" />
+    </UnitTest>
+    <UnitTest name="IncrementTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="c4d5529e-aaf1-79be-eb52-57d60f631bf9">
+      <DeploymentItems>
+        <DeploymentItem filename="ClassLib.dll" />
+      </DeploymentItems>
+      <Execution id="d4c903b3-194f-4d29-9188-4a46f688cc31" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystem_PointTotalTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IncrementTest" />
+    </UnitTest>
+    <UnitTest name="ToStringTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="7b785e64-e8f0-3e8d-eda1-0ac7243fd269">
+      <Execution id="e98c7c50-140f-4449-9caf-aa4690f74c9f" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.ClubTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToStringTest" />
+    </UnitTest>
+    <UnitTest name="GetGoalsTestAway" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="963d8b99-20c3-775c-205c-749fdd0753ea">
+      <Execution id="7db847f9-bca7-4817-9f91-016657ba32b9" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetGoalsTestAway" />
+    </UnitTest>
+    <UnitTest name="CompareToTest1" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="e90a1e76-58f9-3155-8edb-f81e804ee109">
+      <DeploymentItems>
+        <DeploymentItem filename="ClassLib.dll" />
+      </DeploymentItems>
+      <Execution id="09cadee7-8cb2-4a37-a8d8-12b6013068ed" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystem_PointTotalTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToTest1" />
+    </UnitTest>
+    <UnitTest name="IsDrawTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="b4187efb-54ab-4acb-76b6-7fe8f1e427c4">
+      <Execution id="7ba0b59d-8f2c-4eb6-a630-9520e78e74c4" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsDrawTest" />
+    </UnitTest>
+    <UnitTest name="CompareToTest2" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="8f0c170b-4d49-74fa-46a5-164670d67999">
+      <DeploymentItems>
+        <DeploymentItem filename="ClassLib.dll" />
+      </DeploymentItems>
+      <Execution id="de98a58e-adb0-450d-a10f-508b7db8b2c9" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystem_PointTotalTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToTest2" />
+    </UnitTest>
+    <UnitTest name="InstanceTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="1140d319-ee8d-1ffd-6dcd-d1bcd0dc7465">
+      <Execution id="6cafad8b-feae-4e50-aba0-d678a223caa2" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystemTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstanceTest" />
+    </UnitTest>
+    <UnitTest name="ToStringTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="3ccce1cc-b482-1bf7-48e4-7806da95b7c4">
+      <DeploymentItems>
+        <DeploymentItem filename="ClassLib.dll" />
+      </DeploymentItems>
+      <Execution id="a9d20449-6d2b-4b22-80ea-086c34062462" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystem_PointTotalTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToStringTest" />
+    </UnitTest>
+    <UnitTest name="HomeTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="de3e310c-7ff5-dd2c-38d7-83ff471389ae">
+      <Execution id="7d43574c-1936-447d-88f7-c80ad680feba" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HomeTest" />
+    </UnitTest>
+    <UnitTest name="IsAwayForfeitTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="d26324f1-f74d-8a17-2cca-dfddd89cb7cf">
+      <Execution id="2ecc3887-8a15-406b-94a8-a73f448fe3d7" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsAwayForfeitTest" />
+    </UnitTest>
+    <UnitTest name="FrenchLeague1PointSystem_PointTotalConstructorTest1" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="a1b0c4b8-f52e-849e-5dc1-5a3525665c48">
+      <DeploymentItems>
+        <DeploymentItem filename="ClassLib.dll" />
+      </DeploymentItems>
+      <Execution id="70698781-ef34-4eac-bd3a-8ee859ed6a8a" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.FrenchLeague1PointSystem_PointTotalTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FrenchLeague1PointSystem_PointTotalConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="IsHomeForfeitTest" storage="d:\dev\dotnet\tp3 foot dotnet\tp3classtest\bin\debug\tp3classtest.dll" id="6da07e9f-7c61-49ff-6d98-466c114e8fbe">
+      <Execution id="7b7adeb7-01b3-4dca-8d7d-91bdb71ebfa3" />
+      <TestMethod codeBase="D:/Dev/Dotnet/TP3 Foot Dotnet/TP3classTest/bin/Debug/TP3classTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TP3classTest.MatchTest, TP3classTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsHomeForfeitTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1140d319-ee8d-1ffd-6dcd-d1bcd0dc7465" executionId="6cafad8b-feae-4e50-aba0-d678a223caa2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="156fb3d3-45e2-ca32-b814-97757bca0ecc" executionId="bde66e55-f7ad-4285-8a81-24dbe6913391" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ccce1cc-b482-1bf7-48e4-7806da95b7c4" executionId="a9d20449-6d2b-4b22-80ea-086c34062462" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49c41386-d9a6-f19d-c9bf-8a218deef5fd" executionId="d1d63221-a54e-429b-a292-77f86e9dd82e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ac3140e-fbe5-6a30-6ad9-539372fc1464" executionId="074b606f-d638-48da-95b0-615c2013b3a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4cc693e8-c589-b96f-8314-aafe93bbf0db" executionId="e503cdd9-588e-4126-8172-f70d8e26a3f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66449b77-e210-300e-ad2f-5d7338ae3674" executionId="ba15ab15-d104-4c99-b654-13421298393e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6da07e9f-7c61-49ff-6d98-466c114e8fbe" executionId="7b7adeb7-01b3-4dca-8d7d-91bdb71ebfa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b785e64-e8f0-3e8d-eda1-0ac7243fd269" executionId="e98c7c50-140f-4449-9caf-aa4690f74c9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f0c170b-4d49-74fa-46a5-164670d67999" executionId="de98a58e-adb0-450d-a10f-508b7db8b2c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92818927-5a18-af3f-f6ee-f687d6ea2905" executionId="6b7d23a8-d3ef-4242-8730-3e84291c2d78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="963d8b99-20c3-775c-205c-749fdd0753ea" executionId="7db847f9-bca7-4817-9f91-016657ba32b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="981f8f49-acaa-83c5-d280-7d86853fde62" executionId="3fbb7c1a-3953-438f-bda6-9ac99873d560" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1b0c4b8-f52e-849e-5dc1-5a3525665c48" executionId="70698781-ef34-4eac-bd3a-8ee859ed6a8a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4187efb-54ab-4acb-76b6-7fe8f1e427c4" executionId="7ba0b59d-8f2c-4eb6-a630-9520e78e74c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc89cd7f-fd1b-bd4b-01f1-030e0a0e8d90" executionId="873801de-216a-4198-b31e-99afa2a870d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4d5529e-aaf1-79be-eb52-57d60f631bf9" executionId="d4c903b3-194f-4d29-9188-4a46f688cc31" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d107c4bc-5dcb-a405-d6ca-bf8831813094" executionId="782f4628-d6af-4027-976f-f1bd4ada68d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d26324f1-f74d-8a17-2cca-dfddd89cb7cf" executionId="2ecc3887-8a15-406b-94a8-a73f448fe3d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de3e310c-7ff5-dd2c-38d7-83ff471389ae" executionId="7d43574c-1936-447d-88f7-c80ad680feba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e90a1e76-58f9-3155-8edb-f81e804ee109" executionId="09cadee7-8cb2-4a37-a8d8-12b6013068ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4e2bdc2-7ad5-a7fd-d80f-fa54d2eec1b9" executionId="63fb6dab-8d18-4645-8274-25d71bf79ded" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6cafad8b-feae-4e50-aba0-d678a223caa2" testId="1140d319-ee8d-1ffd-6dcd-d1bcd0dc7465" testName="InstanceTest" computerName="KEIMI-PC" duration="00:00:00.0235837" startTime="2013-03-11T17:51:55.4336982+01:00" endTime="2013-03-11T17:51:55.7077139+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cafad8b-feae-4e50-aba0-d678a223caa2">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   at TP3classTest.FrenchLeague1PointSystemTest.InstanceTest() in D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\FrenchLeague1PointSystemTest.cs:line 114
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bde66e55-f7ad-4285-8a81-24dbe6913391" testId="156fb3d3-45e2-ca32-b814-97757bca0ecc" testName="GetPointsFromMatchTest" computerName="KEIMI-PC" duration="00:00:00.0121962" startTime="2013-03-11T17:51:55.7097140+01:00" endTime="2013-03-11T17:51:55.7367156+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bde66e55-f7ad-4285-8a81-24dbe6913391">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;-1 (System.Int32)&gt;. Actual:&lt;ClassLib.FrenchLeague1PointSystem+PointTotal (ClassLib.FrenchLeague1PointSystem+PointTotal)&gt;. </Message>
+          <StackTrace>   at TP3classTest.FrenchLeague1PointSystemTest.GetPointsFromMatchTest() in D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\FrenchLeague1PointSystemTest.cs:line 90
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a9d20449-6d2b-4b22-80ea-086c34062462" testId="3ccce1cc-b482-1bf7-48e4-7806da95b7c4" testName="ToStringTest" computerName="KEIMI-PC" duration="00:00:00.0084870" startTime="2013-03-11T17:51:55.7377156+01:00" endTime="2013-03-11T17:51:55.7517164+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9d20449-6d2b-4b22-80ea-086c34062462">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;&gt;. Actual:&lt;ClassLib.FrenchLeague1PointSystem+PointTotal&gt;. </Message>
+          <StackTrace>   at TP3classTest.FrenchLeague1PointSystem_PointTotalTest.ToStringTest() in D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\FrenchLeague1PointSystem_PointTotalTest.cs:line 209
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d1d63221-a54e-429b-a292-77f86e9dd82e" testId="49c41386-d9a6-f19d-c9bf-8a218deef5fd" testName="GetGoalsTestAwayAndHome" computerName="KEIMI-PC" duration="00:00:00.0005234" startTime="2013-03-11T17:51:55.7527165+01:00" endTime="2013-03-11T17:51:55.7677173+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1d63221-a54e-429b-a292-77f86e9dd82e">
+    </UnitTestResult>
+    <UnitTestResult executionId="074b606f-d638-48da-95b0-615c2013b3a7" testId="4ac3140e-fbe5-6a30-6ad9-539372fc1464" testName="AwayTest" computerName="KEIMI-PC" duration="00:00:00.0005067" startTime="2013-03-11T17:51:55.7757178+01:00" endTime="2013-03-11T17:51:55.7817181+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="074b606f-d638-48da-95b0-615c2013b3a7">
+    </UnitTestResult>
+    <UnitTestResult executionId="e503cdd9-588e-4126-8172-f70d8e26a3f8" testId="4cc693e8-c589-b96f-8314-aafe93bbf0db" testName="HomeGoalsTest" computerName="KEIMI-PC" duration="00:00:00.0003976" startTime="2013-03-11T17:51:55.7917187+01:00" endTime="2013-03-11T17:51:55.8057195+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e503cdd9-588e-4126-8172-f70d8e26a3f8">
+    </UnitTestResult>
+    <UnitTestResult executionId="ba15ab15-d104-4c99-b654-13421298393e" testId="66449b77-e210-300e-ad2f-5d7338ae3674" testName="GetGoalsTestHome" computerName="KEIMI-PC" duration="00:00:00.0003048" startTime="2013-03-11T17:51:55.8147200+01:00" endTime="2013-03-11T17:51:55.8227205+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba15ab15-d104-4c99-b654-13421298393e">
+    </UnitTestResult>
+    <UnitTestResult executionId="7b7adeb7-01b3-4dca-8d7d-91bdb71ebfa3" testId="6da07e9f-7c61-49ff-6d98-466c114e8fbe" testName="IsHomeForfeitTest" computerName="KEIMI-PC" duration="00:00:00.0005512" startTime="2013-03-11T17:51:55.8257206+01:00" endTime="2013-03-11T17:51:55.8317210+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b7adeb7-01b3-4dca-8d7d-91bdb71ebfa3">
+    </UnitTestResult>
+    <UnitTestResult executionId="e98c7c50-140f-4449-9caf-aa4690f74c9f" testId="7b785e64-e8f0-3e8d-eda1-0ac7243fd269" testName="ToStringTest" computerName="KEIMI-PC" duration="00:00:00.0005576" startTime="2013-03-11T17:51:55.8357212+01:00" endTime="2013-03-11T17:51:55.8427216+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e98c7c50-140f-4449-9caf-aa4690f74c9f">
+    </UnitTestResult>
+    <UnitTestResult executionId="de98a58e-adb0-450d-a10f-508b7db8b2c9" testId="8f0c170b-4d49-74fa-46a5-164670d67999" testName="CompareToTest2" computerName="KEIMI-PC" duration="00:00:00.0006153" startTime="2013-03-11T17:51:55.8447217+01:00" endTime="2013-03-11T17:51:55.8517221+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de98a58e-adb0-450d-a10f-508b7db8b2c9">
+    </UnitTestResult>
+    <UnitTestResult executionId="6b7d23a8-d3ef-4242-8730-3e84291c2d78" testId="92818927-5a18-af3f-f6ee-f687d6ea2905" testName="InitialPointsTest" computerName="KEIMI-PC" duration="00:00:00.0019097" startTime="2013-03-11T17:51:55.8567224+01:00" endTime="2013-03-11T17:51:55.8667230+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b7d23a8-d3ef-4242-8730-3e84291c2d78">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   at TP3classTest.FrenchLeague1PointSystemTest.InitialPointsTest() in D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\FrenchLeague1PointSystemTest.cs:line 103
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7db847f9-bca7-4817-9f91-016657ba32b9" testId="963d8b99-20c3-775c-205c-749fdd0753ea" testName="GetGoalsTestAway" computerName="KEIMI-PC" duration="00:00:00.0003019" startTime="2013-03-11T17:51:55.8697232+01:00" endTime="2013-03-11T17:51:55.8757235+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7db847f9-bca7-4817-9f91-016657ba32b9">
+    </UnitTestResult>
+    <UnitTestResult executionId="3fbb7c1a-3953-438f-bda6-9ac99873d560" testId="981f8f49-acaa-83c5-d280-7d86853fde62" testName="FrenchLeague1PointSystemConstructorTest" computerName="KEIMI-PC" duration="00:00:00.0007718" startTime="2013-03-11T17:51:55.8767236+01:00" endTime="2013-03-11T17:51:55.8837240+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3fbb7c1a-3953-438f-bda6-9ac99873d560">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   at TP3classTest.FrenchLeague1PointSystemTest.FrenchLeague1PointSystemConstructorTest() in D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\FrenchLeague1PointSystemTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="70698781-ef34-4eac-bd3a-8ee859ed6a8a" testId="a1b0c4b8-f52e-849e-5dc1-5a3525665c48" testName="FrenchLeague1PointSystem_PointTotalConstructorTest1" computerName="KEIMI-PC" duration="00:00:00.0081432" startTime="2013-03-11T17:51:55.8847240+01:00" endTime="2013-03-11T17:51:55.8977248+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="70698781-ef34-4eac-bd3a-8ee859ed6a8a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TP3classTest.FrenchLeague1PointSystem_PointTotalTest.FrenchLeague1PointSystem_PointTotalConstructorTest1 threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at ClassLib.FrenchLeague1PointSystem_Accessor.PointTotal..ctor(Match m, Boolean home)
+   at TP3classTest.FrenchLeague1PointSystem_PointTotalTest.FrenchLeague1PointSystem_PointTotalConstructorTest1() in D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\FrenchLeague1PointSystem_PointTotalTest.cs:line 87
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7ba0b59d-8f2c-4eb6-a630-9520e78e74c4" testId="b4187efb-54ab-4acb-76b6-7fe8f1e427c4" testName="IsDrawTest" computerName="KEIMI-PC" duration="00:00:00.0004075" startTime="2013-03-11T17:51:55.8987248+01:00" endTime="2013-03-11T17:51:55.9057252+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ba0b59d-8f2c-4eb6-a630-9520e78e74c4">
+    </UnitTestResult>
+    <UnitTestResult executionId="873801de-216a-4198-b31e-99afa2a870d1" testId="bc89cd7f-fd1b-bd4b-01f1-030e0a0e8d90" testName="FrenchLeague1PointSystem_PointTotalConstructorTest" computerName="KEIMI-PC" duration="00:00:00.0011088" startTime="2013-03-11T17:51:55.9067253+01:00" endTime="2013-03-11T17:51:55.9127256+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="873801de-216a-4198-b31e-99afa2a870d1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   at TP3classTest.FrenchLeague1PointSystem_PointTotalTest.FrenchLeague1PointSystem_PointTotalConstructorTest() in D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\FrenchLeague1PointSystem_PointTotalTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d4c903b3-194f-4d29-9188-4a46f688cc31" testId="c4d5529e-aaf1-79be-eb52-57d60f631bf9" testName="IncrementTest" computerName="KEIMI-PC" duration="00:00:00.0017891" startTime="2013-03-11T17:51:55.9137257+01:00" endTime="2013-03-11T17:51:55.9187260+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4c903b3-194f-4d29-9188-4a46f688cc31">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at TP3classTest.FrenchLeague1PointSystem_PointTotalTest.IncrementTest() in D:\Dev\Dotnet\TP3 Foot Dotnet\TP3classTest\FrenchLeague1PointSystem_PointTotalTest.cs:line 190
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="782f4628-d6af-4027-976f-f1bd4ada68d3" testId="d107c4bc-5dcb-a405-d6ca-bf8831813094" testName="AwayGoalsTest" computerName="KEIMI-PC" duration="00:00:00.0005571" startTime="2013-03-11T17:51:55.9197260+01:00" endTime="2013-03-11T17:51:55.9257264+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="782f4628-d6af-4027-976f-f1bd4ada68d3">
+    </UnitTestResult>
+    <UnitTestResult executionId="2ecc3887-8a15-406b-94a8-a73f448fe3d7" testId="d26324f1-f74d-8a17-2cca-dfddd89cb7cf" testName="IsAwayForfeitTest" computerName="KEIMI-PC" duration="00:00:00.0004395" startTime="2013-03-11T17:51:55.9267264+01:00" endTime="2013-03-11T17:51:55.9327268+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ecc3887-8a15-406b-94a8-a73f448fe3d7">
+    </UnitTestResult>
+    <UnitTestResult executionId="7d43574c-1936-447d-88f7-c80ad680feba" testId="de3e310c-7ff5-dd2c-38d7-83ff471389ae" testName="HomeTest" computerName="KEIMI-PC" duration="00:00:00.0002865" startTime="2013-03-11T17:51:55.9337268+01:00" endTime="2013-03-11T17:51:55.9387271+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d43574c-1936-447d-88f7-c80ad680feba">
+    </UnitTestResult>
+    <UnitTestResult executionId="09cadee7-8cb2-4a37-a8d8-12b6013068ed" testId="e90a1e76-58f9-3155-8edb-f81e804ee109" testName="CompareToTest1" computerName="KEIMI-PC" duration="00:00:00.0005199" startTime="2013-03-11T17:51:55.9407272+01:00" endTime="2013-03-11T17:51:55.9477276+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09cadee7-8cb2-4a37-a8d8-12b6013068ed">
+    </UnitTestResult>
+    <UnitTestResult executionId="63fb6dab-8d18-4645-8274-25d71bf79ded" testId="f4e2bdc2-7ad5-a7fd-d80f-fa54d2eec1b9" testName="CompareToTest3" computerName="KEIMI-PC" duration="00:00:00.0003211" startTime="2013-03-11T17:51:55.9487277+01:00" endTime="2013-03-11T17:51:55.9537280+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63fb6dab-8d18-4645-8274-25d71bf79ded">
+    </UnitTestResult>
+  </Results>
+</TestRun>

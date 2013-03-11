@@ -11,7 +11,7 @@ namespace ClassLib
         {
             //private int goalaverage;
             private int points;
-
+            
 
             public PointTotal()
             {
@@ -20,20 +20,41 @@ namespace ClassLib
 
             public PointTotal(Match m, bool home)
             {
-                this.points = m.GetGoals(home) - m.GetGoals(!home);
-                //this.goalaverage = m.GetGoals(home) / m.GetGoals(!home);
+
+                //this.goalaverage = m.GetGoals(home) - m.GetGoals(!home);
+
+                int result = m.GetGoals(home) - m.GetGoals(!home);
+                if (result > 0)
+                {
+                    this.points += 1;
+                }
+                else
+                {
+                    this.points += 0;
+                }
+              
+
             }
 
 
             public int CompareTo(object obj)
             {
                 return this.points - ((PointTotal)obj).points;
+                /*if(this.points != ((PointTotal)obj).points)
+                {
+                    return this.points - ((PointTotal)obj).points;
+                }
+                else
+                {
+                    return this.goalaverage - ((PointTotal)obj).goalaverage;
+                }*/
     
             }
 
             public void Increment(PointSystem.ITotal with)
             {
                 this.points += ((PointTotal)with).points;
+                //this.goalaverage += ((PointTotal)with).goalaverage;
             }
 
 
